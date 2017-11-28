@@ -30,4 +30,12 @@ p {
 img { 
 	margin: 15px; }
 
-<img src="photos/TweetPolemique.png" 
+blockquote {
+	font-style: italic;
+	margin-left: 30px;
+	color: grey;
+
+
+}
+
+
