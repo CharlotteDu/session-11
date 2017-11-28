@@ -4,14 +4,22 @@
 
 #app #counter {
 	font-size: 75px;
-	color:blue;
+	color:#1E90FF;
 }
 h1 { 
 	margin: 50px;
+	font-family: keys of paradise;
+	text-align: center;
+	padding: 10px;
+	line-height: 65px;
  }
 
 h2 {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+	font-family: keys of paradise;
+	margin-top: 25px;
+	line-height: 60px;
+	font-size: 25px;
 }
 p {
   text-align: justify;
