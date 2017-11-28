@@ -1,12 +1,32 @@
 var vm = new Vue({
-  el: '.app',
-  data: function () {
-    var now = new Date();
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-
-    return  {
-      now: now,
-      day: days[now.getDay()]
-    };
+  el: '#app',
+  data: {
+  	countInsultesMax: 55,
+  	countInsultes: 0, 
+  	interval: null
+  },
+  methods: {
+  	visibilityCounterChanged: function visibilityCounterChanged(isVisible) {
+  		if(isVisible === true) {
+  			this.startCounter()
+  		} else {
+  			this.stopCounter()
+  		}
+  	},
+  	startCounter: function startCounter() {
+  		this.interval = setInterval(this.incrementCounter, 50)
+  	},
+  	stopCounter: function stopCounter() {
+  		clearInterval(this.interval)
+  		this.interval = null
+  	},
+  	incrementCounter: function incrementCounter() {
+  		if(this.countInsultes >= this.countInsultesMax) {
+  			this.stopCounter()
+  		} else {
+  			this.countInsultes++;
+  		}
+  	}
   }
+  
 })

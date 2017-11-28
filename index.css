@@ -1,3 +1,23 @@
-.app {
+#app {
   
 }
+
+#app #counter {
+	font-size: 75px;
+	color:blue;
+}
+h1 { 
+	margin: 50px;
+ }
+
+h2 {
+	margin-bottom: 15px;
+}
+p {
+  text-align: justify;
+}
+
+img { 
+	margin: 15px; }
+
+<img src="photos/TweetPolemique.png" 

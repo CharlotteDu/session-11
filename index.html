@@ -7,12 +7,79 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div class="app container my-5">
-      <h1>Hello world</h1>
-      <p>Happy {{ day }}! It's {{ now.getHours() }}:{{ now.getMinutes() }}.</p>
+    <div id="app" class="container my-5">
+      <h1>Petite expérimentation Twitter : de l'impunité sur Internet </h1>
+      <h2> Quelle expérience ? </h2>
+
+      <div class="container col-10"> 
+        <div class="row">
+          <div class="col-6">
+            <p> Les réseaux sociaux semblent être le lieu de toutes les libertés. En réalité, des règles existent. La liberté d'expression connait elle-même des limites, celles de la légalité : en théorie, pas d'insultes ni de menaces, et encore moins à caractère discriminatoire. Et vous, savez-vous ce que vous risquez sur Internet ? </p> 
+
+            <p> Nous avons mené une petite expérience sur Twitter. 
+             Tout est parti d'un compte supposé homophobe, que l'association l'Amicale des Jeunes du Refuge (association d'aide aux jeunes LGBT) a aidé à supprimer. </p>
+
+          </div>
+
+          <div class="col-4">
+            <img src="photos/TweetRefuge.png"
+                height=" 200px"
+               >
+          </div>
+        </div>
+      </div>
+    
+
+     <div class="container col-10"> 
+        <div class="row">
+          <div class="col-6">
+            <img src="photos/TweetYanis.png" 
+                height=" 150px"
+                align="center"
+                >
+          </div>
+
+          <div class="col-4">
+            <p> L'association tweete à ce propos, et affiche un des tweets jugés transphobes. </p>
+          </div>
+        </div>
+      </div>
+
+
+     <div class="container col-10">
+
+
+
+      <p> Les réactions ne tardent pas à pleuvoir. L'une d'entre elles affiche une inversion des valeurs : le compte supprimé serait la première victime de ces événements. C'est à ce tweet que nous avons réagi, en rappelant la loi avec une pointe d'ironie. </p>
+
+      <center>
+       <img src="photos/TweetPolemique.png" >
+      </center>
+
+      <p> Et c'est là que tout à dérapé. Insultes, menaces de violence, menaces de viol. </p>
+
+      <p> Pendant une semaine, nous avons essayé de répondre à tout le monde le plus calmement possible (malgré quelques énervements, on a globalement réussi), mais sans se priver d'ironie ou de troller les trolls. </p>
+
+      <p> On vous livre les résultats de cette expérimentation. </p>
     </div>
 
+
+
+      <h2> Insultes et menaces : classification </h2>
+      <div id="counter" v-observe-visibility="visibilityCounterChanged">{{ countInsultes }}</div>
+
+      <h2> Messages in box </h2>
+
+
+      <h2> Profils des comptes </h2>
+    
+    </div>
+
+
+
     <script src="vendors/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-observe-visibility@0.3.1"></script>
     <script src="index.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
   </body>
 </html>
