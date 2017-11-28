@@ -1,7 +1,7 @@
 var vm = new Vue({
   el: '#app',
   data: {
-  	countInsultesMax: 55,
+  	countInsultesMax: 27,
   	countInsultes: 0, 
   	interval: null
   },
@@ -14,7 +14,7 @@ var vm = new Vue({
   		}
   	},
   	startCounter: function startCounter() {
-  		this.interval = setInterval(this.incrementCounter, 50)
+  		this.interval = setInterval(this.incrementCounter, 80)
   	},
   	stopCounter: function stopCounter() {
   		clearInterval(this.interval)

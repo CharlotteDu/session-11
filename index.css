@@ -5,6 +5,7 @@
 #app #counter {
 	font-size: 75px;
 	color:#1E90FF;
+	float: left:;
 }
 h1 { 
 	margin: 50px;
@@ -23,6 +24,7 @@ h2 {
 }
 p {
   text-align: justify;
+  margin: 15px;
 }
 
 img { 
